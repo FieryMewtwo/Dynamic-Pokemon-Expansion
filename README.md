@@ -17,7 +17,7 @@ A dynamic data insertion tool for expanding Pokemon data in FireRed.
 **NOTE** It is highly recommended to apply the [Complete Fire Red Upgrade](https://github.com/Skeli789/Complete-Fire-Red-Upgrade) following the insertion of this hack. Otherwise, make sure to comment out the  line ``#define EXPAND_LEARNSETS`` in the defines file or your game will crash (unless you have expanded movesets manually).  Additionally, if you're **not** using the Complete Fire Red Upgrade, in [bytereplacement](https://github.com/Skeli789/Dynamic-Pokemon-Expansion/blob/master/bytereplacement), find the changes for the seen  and caught flag ram, and change it to some free  save space. Make sure to apply a saveblock hack first and a TM/Tutor expansion first, though.
 
 ## Installation Instructions:
-See the [wiki]("https://github.com/FieryMewtwo/Dynamic-Pokemon-Expansion/wiki/")
+See the [Wiki](https://github.com/FieryMewtwo/Dynamic-Pokemon-Expansion/wiki)
 
 ## About TM/HM & Move Tutors
 When looking in the ``src`` directory, you will notice two subdirectories, ``tm_compatibility`` (for modifying TM/HM data) and ``tutor_compatibility`` (for modifying Move Tutor data). Contained within these directories are files corresponding to each TM/HM and Move Tutor. Unlike most tools and expansions, this engine allows modification by TM/HM and Move Tutor number, as opposed to by species. To give a species a certain TM/HM or Move Tutor, simply add the species name to the appropriate file. If you want to change one of the pre-defined TM/HM's or Move Tutors, simply change the name of the file (leaving the number the same), and update the corresponding data in the files ``include/tutors.h`` and/or ``src/TM_Tutor_Tables.c``.
